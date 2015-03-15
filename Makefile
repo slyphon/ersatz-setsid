@@ -21,5 +21,8 @@
 setsid: setsid.c
 	gcc -o setsid setsid.c
 
+setpgid: setpgid.c
+	gcc -o setpgid setpgid.c
+
 clean:
 	rm setsid
