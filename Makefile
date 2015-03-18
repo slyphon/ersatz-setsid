@@ -24,5 +24,10 @@ setsid: setsid.c
 setpgid: setpgid.c
 	gcc -o setpgid setpgid.c
 
+.PHONY: clean all
+
 clean:
-	rm setsid
+	rm setsid setpgid
+
+all: setsid setpgid
+
