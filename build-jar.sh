@@ -16,9 +16,9 @@ TARGET_PATH="$TEMP/target/com/twitter/git/repo/process"
 mkdir -p "${TARGET_PATH}"
 
 for bin in setsid setpgid; do
-  cp $bin "${TARGET_PATH}/${bin}.${sysname}"
+  cp $bin "${TARGET_PATH}/${bin}.${SYSNAME}"
 done
 
-jar cf "ersatz-setsid-${sysname}-0.1.0.jar" -C "$TEMP/target" com
+jar cf "ersatz-setsid-${SYSNAME}-0.1.0.jar" -C "$TEMP/target" com
 
 
